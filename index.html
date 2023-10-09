@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,25 @@
     <title>God Bless Us</title>
 </head>
 <body>
-    <div class="wall">
-        <div class="post">
-            <div class="post-header">
-                <div class="post-avatar"><img src="principal.png" alt=""></div>
-                <div class="comment-box">
-                    <textarea class="comment-textarea" placeholder="¿Que estas pensando, Brandon?"></textarea>
-                </div>
+    <section class="muro">
+        <div class="post-header">
+            <div class="post-avatar"><img src="principal.png" alt=""></div>
+            <div class="comment-box">
+                <button class="boton-comentario">¿Qué estás pensando, Brandon?</button>
             </div>
         </div>
-    </div>
 
+        <div class="modal-comentario">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <div class="cuadro-contenedor">
+                    <textarea class="cuadro-comentario" placeholder="Qué estás pensando, Brandon?"></textarea>
+                </div>
+                <button class="publicar-comentario" disabled>Publicar</button>
+            </div>
+        </div>
+        <div class="comentarios"></div>
+    </section>
 </body>
-<footer><script type="module" src="script.js"></script></footer>
+<footer> <script src="script.js"></script></footer>
 </html>
